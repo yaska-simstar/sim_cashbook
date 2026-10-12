@@ -1,0 +1,47 @@
+/* Design tokens (generated from design-system/tokens.json). Odoo 18 Enterprise backend look. */
+:root{
+  --brand:#714b67; /* Enterprise brand plum ($o-brand-odoo). Primary buttons (btn-primary), the active app tile, the cover. White text on it (7.4:1). */
+  --brand-hover:#624159; /* Hover / pressed state of btn-primary. */
+  --action:#017e84; /* Action teal ($o-action). Links, many2one values, the active statusbar step, focused field underline, selected checkbox. Reads 4.9:1 on view-bg. */
+  --action-hover:#01585c; /* Hover state of links and action-coloured text. */
+  --action-subtle:#e6f2f3; /* Background of the current statusbar step and selected list rows; action text on it. */
+  --gray-100:#f9fafb; /* Webclient background behind form sheets; control panel ground; list row hover. */
+  --gray-200:#e7e9ed; /* btn-secondary fill; list and table hairlines; statusbar inactive steps. */
+  --gray-300:#d8dadd; /* Field underlines, input borders, sheet border, card border. */
+  --gray-400:#9a9ca5; /* Disabled text and icons only (not body text: 2.7:1). */
+  --gray-500:#7c7f89; /* Placeholders, inactive icons, search-icon. 3.9:1 — never body text. */
+  --gray-600:#5f636f; /* Muted text: field labels in lists, help text, breadcrumb parents, list footers. 6.1:1 on view-bg. */
+  --gray-700:#374151; /* Main text colour of the web client ($o-main-text-color) on view-bg and gray-100. */
+  --gray-800:#1f2937; /* Headings, record titles, breadcrumb current item. */
+  --gray-900:#111827; /* Strongest text: amounts in totals rows, text on btn-secondary. */
+  --view-bg:#ffffff; /* Form sheet, list table, kanban card and dialog surface. */
+  --text:var(--gray-700); /* Body text on view-bg and gray-100. */
+  --text-muted:var(--gray-600); /* Secondary text on view-bg and gray-100. */
+  --border:var(--gray-300); /* Default 1px border for sheets, cards, inputs. */
+  --hairline:var(--gray-200); /* Row separators in list views and tables. */
+  --success:#28a745; /* Success fill (posted dot, positive bar). As text on white only at 24px+ (3.1:1); use success-ink for small text. */
+  --success-subtle:#d4edda; /* Ground of the success badge (Posted, Balanced). */
+  --success-ink:#155724; /* Text on success-subtle (7.9:1) and receipt amounts on view-bg. */
+  --info:#17a2b8; /* Info fill (alert icon, chart bars). */
+  --info-subtle:#d1ecf1; /* Ground of the info badge and info alerts (Draft). */
+  --info-ink:#0c5460; /* Text on info-subtle (7.8:1). */
+  --warning:#ffac00; /* Warning fill and icon. Never text on white (1.9:1); dark text on it. */
+  --warning-subtle:#fff3cd; /* Ground of the warning badge and warning alert (cash difference). */
+  --warning-ink:#856404; /* Text on warning-subtle (5.5:1). */
+  --danger:#d44c59; /* Danger fill, required-field error underline, delete icon. As small text it reads 4.2:1 on white — use danger-ink. */
+  --danger-subtle:#f8d7da; /* Ground of the danger badge and invalid field (Cancelled, Short). */
+  --danger-ink:#a72c39; /* Text on danger-subtle and payment amounts on view-bg (6.2:1 on white). */
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:24px;
+  --space-6:32px;
+  --radius:4px;
+  --radius-lg:8px;
+  --radius-pill:999px;
+  --shadow-sheet:0 1px 2px rgba(17, 24, 39, 0.06);
+  --shadow-dropdown:0 6px 16px rgba(17, 24, 39, 0.14);
+  --font-sans:-apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Noto Sans", Arial, sans-serif;
+  --font-mono:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}

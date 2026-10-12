@@ -1,0 +1,58 @@
+/* Prototype-specific styles (screens of the Cash Management app). */
+html,body{height:100%}
+body{background:var(--gray-100)}
+.app{min-height:100%;display:flex;flex-direction:column}
+.proto_note{font-size:12px;color:var(--text-muted)}
+.view{flex:1}
+.o_menu_sections span{user-select:none}
+.box_tabs{display:flex;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;background:var(--view-bg)}
+.box_tabs button{font:500 13px/18px var(--font-sans);padding:7px 14px;border:0;background:none;color:var(--gray-600);cursor:pointer;text-align:left}
+.box_tabs button+button{border-left:1px solid var(--border)}
+.box_tabs button.active{background:var(--action-subtle);color:var(--action)}
+.box_tabs button small{display:block;font-size:12px;font-weight:400;color:var(--text-muted)}
+.summary{display:flex;gap:var(--space-5);align-items:center;flex-wrap:wrap;padding:10px var(--space-4);background:var(--gray-100);border-bottom:1px solid var(--border);font-size:13px;color:var(--text-muted)}
+.summary b{display:block;font:600 16px/22px var(--font-sans);color:var(--gray-900);font-variant-numeric:tabular-nums}
+.summary .closing b{color:var(--action)}
+.chips{display:flex;gap:6px}
+.chip{font:500 13px/18px var(--font-sans);padding:4px 10px;border-radius:var(--radius-pill);border:1px solid var(--border);background:var(--view-bg);color:var(--gray-700);cursor:pointer}
+.chip.on{background:var(--action-subtle);border-color:var(--action);color:var(--action)}
+tr.clickable{cursor:pointer}
+td.muted{color:var(--gray-500)}
+tr.locked td:first-child::after{content:"";}
+.lock{font-size:12px;color:var(--text-muted);margin-left:6px}
+.cd_cur{font:600 11px/16px var(--font-sans);padding:1px 6px;border-radius:var(--radius);background:var(--gray-200);color:var(--gray-800);margin-left:6px;vertical-align:2px}
+.o_kanban_renderer{grid-template-columns:repeat(2,minmax(0,1fr))}
+.o_kanban_kpi{font-size:20px}
+.o_kanban_lines a{cursor:pointer}
+.dash_top{padding:var(--space-4) var(--space-4) 0}.sale_wrap{display:grid;grid-template-columns:1fr}
+.sale_sheet{max-width:none!important}
+.sale_chatter{border-left:0;border-top:1px solid var(--border);min-height:0}
+.sale_h1{font-size:30px;line-height:36px}
+.req{color:var(--danger);font-size:12px;vertical-align:top;margin-left:2px}
+.sale_lines th,.sale_lines td{font-size:13px;padding-left:6px;padding-right:6px}
+.sale_lines select.o_field_widget{min-width:120px}
+.num_in{text-align:right;width:96px;display:inline-block}
+.sale_totals{margin-left:auto;width:320px;margin-top:8px}
+.sale_totals div{display:flex;justify-content:space-between;padding:4px 0;font-variant-numeric:tabular-nums}
+.sale_totals .grand{border-top:1px solid var(--border);font-weight:600;color:var(--gray-900);font-size:16px;padding-top:8px}
+.form_wrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;align-items:start;min-height:100%}
+.o_form_sheet{max-width:1000px}
+.amt{font:600 22px/28px var(--font-sans);font-variant-numeric:tabular-nums;color:var(--gray-900)}
+.cur_row{display:flex;align-items:baseline;gap:8px}
+.cur_row span{font-weight:600;color:var(--gray-600);white-space:nowrap}
+.hint{font-size:12px;color:var(--text-muted);margin-top:2px}
+.o_radio{flex-wrap:wrap}
+.dc_table td{vertical-align:top;padding-top:10px;padding-bottom:10px}
+.dc_table input.o_field_widget{max-width:170px;text-align:right;font-variant-numeric:tabular-nums}
+.dc_diff{font-weight:600;font-variant-numeric:tabular-nums}
+.dc_ok{color:var(--success-ink)}.dc_bad{color:var(--danger-ink)}.dc_over{color:var(--warning-ink)}
+.modal_bg{position:fixed;inset:0;background:rgba(17,24,39,.45);display:flex;align-items:flex-start;justify-content:center;padding-top:60px;z-index:50}
+.modal{background:var(--view-bg);border-radius:var(--radius-lg);box-shadow:var(--shadow-dropdown);width:520px;max-width:calc(100% - 32px);overflow:hidden}
+.modal header{padding:14px 20px;border-bottom:1px solid var(--border);font:600 16px/22px var(--font-sans);color:var(--gray-900);display:flex;justify-content:space-between}
+.modal header span{cursor:pointer;color:var(--gray-600)}
+.modal .body{padding:12px 20px;max-height:60vh;overflow:auto}
+.modal footer{padding:12px 20px;border-top:1px solid var(--border);display:flex;gap:8px}
+.toast{position:fixed;right:20px;bottom:20px;background:var(--gray-800);color:#fff;padding:10px 16px;border-radius:var(--radius);font-size:14px;box-shadow:var(--shadow-dropdown);z-index:60}
+.o_dashboard_graph{display:none}
+.empty{text-align:center;padding:40px;color:var(--text-muted)}
+@media (max-width:900px){.o_kanban_renderer{grid-template-columns:1fr}.form_wrap{grid-template-columns:1fr}.o-mail-Chatter{border-left:0;border-top:1px solid var(--border)}.o_group{grid-template-columns:1fr}.o_control_panel{grid-template-columns:1fr}.o_menu_sections{overflow:auto}}
